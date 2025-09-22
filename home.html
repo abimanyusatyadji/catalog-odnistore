@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/b188edadce.js" crossorigin="anonymous"></script>
+    <title>Odni Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-header logo">
+            <img src="logo1.png" alt="logo">
+        </div>
+<!--NAVIGASI BAR-->
+        <div class="header-nav">
+            <nav>
+                <div class="home active">
+                    <p class="title-nav"><a href="home.html">HOME</a></p>
+                </div>
+                <div class="produk">
+                    <p class="title-nav"><a href="produk.html">PRODUK</a></p>
+                    <ul class="drop-down">
+                        <li><a href="bomberjacket.html">Bomber Jacket</a></li>
+                        <li><a href="canvasjacket.html">Canvas Jacket</a></li>
+                        <li><a href="denimjacket.html">Denim Jacket</a></li>
+                    </ul>
+                </div>
+                <div class="belanja">
+                    <p><a href="belanja.html">BELANJA</a></p>
+                </div>
+            </nav>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Cari apa nih?">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+<!--SLIDESHOW-->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="satu.png" />
+        </div>
+
+        <div class="mySlides">
+            <img src="dua.png" />
+        </div>
+
+        <div class="mySlides">
+            <img src="tiga.png" />
+        </div>
+
+        <div class="mySlides">
+            <img src="empat.png" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+<!--CONTENT-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="title-content">
+                <h2>PRODUK</h2>
+            </div>
+            <div class="products">
+                <div class="item">
+                    <a href="bomberjacket.html">
+                        <img src="https://cf.shopee.co.id/file/f23349c636007f3a424704e8dd82bb04_tn">
+                        <h4>JAKET BOMBER OSLO SUEDING</h4>
+                        <p>Rp175.000</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="canvasjacket.html">
+                        <img src="https://cf.shopee.co.id/file/1e1c196b64cd894640d34b92bcca6ab6_tn">
+                        <h4>JAKET CANVAS</h4>
+                        <p>Rp145.000</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="denimjacket.html">
+                        <img src="https://cf.shopee.co.id/file/c1a5aa5997b9270026d65ca099484d56_tn">
+                        <h4>JAKET DENIM</h4>
+                        <p>Rp165.000</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--WHATSAPP-->
+    <div class="wa">
+        <p class="drop-left">WhatsApp</p>
+        <a href="https://wa.me/message/BMFFS2UAZZZAG1" target="_blank" class="logo-wa"><img
+                src="https://seeklogo.com/images/W/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png"></a>
+    </div>
+<!--FOOTER-->
+    <footer>
+        <div class="logo-wrapper">
+            <img class="logo-footer" src="logo1.png">
+            <ul class="medsos">
+                <li><a href="https://www.instagram.com/odnistore/" target="_blank" class="fab fa-instagram"></a></li>
+                <li><a href="https://shp.ee/k6ntr5g" target="_blank"><img class="shopee" src="shopee.png"></a></li>
+            <ul>
+        </div>
+        <div class="informasi footer-list">
+            <p>Informasi</p>
+            <ul>
+                <li><a href="#">Garansi Produk</a></li>
+                <li><a href="#">Pengiriman</a></li>
+            </ul>
+        </div>
+        <div class="hub footer-list">
+            <p>Hubungi Kami</p>
+            <ul>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script>
+        let slideIndex = 1;
+
+        const plusSlides = (n) => {
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+
+        const showSlides = (n) => {
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        showSlides(slideIndex);      
+    </script>
+</body>
+
+</html>

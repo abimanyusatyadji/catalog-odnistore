@@ -1,0 +1,8 @@
+@media (max-width: 1070px){
+    .search {
+        display: none;
+    }
+    .slideshow-container {
+        width: 100%;
+    }
+}

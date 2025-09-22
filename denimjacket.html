@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bomber.css">
+    <script src="https://kit.fontawesome.com/b188edadce.js" crossorigin="anonymous"></script>
+    <title>Odni Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-header logo">
+            <img src="logo1.png" alt="logo">
+        </div>
+        <!--NAVIGASI BAR-->
+        <div class="header-nav">
+            <nav>
+                <div class="home">
+                    <p class="title-nav"><a href="home.html">HOME</a></p>
+                </div>
+                <div class="produk">
+                    <p class="title-nav"><a href="produk.html">PRODUK</a></p>
+                    <ul class="drop-down">
+                        <li><a href="bomberjacket.html">Bomber Jacket</a></li>
+                        <li><a href="canvasjacket.html">Canvas Jacket</a></li>
+                        <li class="active"><a href="denimjacket.html">Denim Jacket</a></li>
+                    </ul>
+                </div>
+                <div class="belanja">
+                    <p><a href="belanja.html">BELANJA</a></p>
+                </div>
+            </nav>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Cari apa nih?">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <!--CONTENT-->
+    <div class="content-wrapper">
+        
+        <div class="container-slide">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="https://cf.shopee.co.id/file/c1a5aa5997b9270026d65ca099484d56_tn">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="denim2.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="denim3.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="https://cf.shopee.co.id/file/c1a5aa5997b9270026d65ca099484d56_tn">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="denim2.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="denim3.png">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="https://cf.shopee.co.id/file/c1a5aa5997b9270026d65ca099484d56_tn" onclick="currentSlide(1)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="denim2.png" onclick="currentSlide(2)"
+                        alt="Blue Washing">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="denim3.png" onclick="currentSlide(3)"
+                        alt="Black Washing">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://cf.shopee.co.id/file/c1a5aa5997b9270026d65ca099484d56_tn" onclick="currentSlide(4)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="denim2.png" onclick="currentSlide(5)"
+                        alt="Blue Washing">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="denim3.png" onclick="currentSlide(6)"
+                        alt="Black Washing">
+                </div>
+            </div>
+        </div>
+        <div class="container-desc">
+            <div class="title-desc">
+                <h2>Denim Jacket</h2>
+                <h3>Rp165.000</h3>
+            </div>
+            <div class="size">
+                <h4>SIZE :</h4>
+                <p>M, L, XL</p>
+            </div>
+            <div class="color">
+                <h4>COLOR :</h4>
+                <p>BLUE WASHING, BLACK WASHING</p>
+            </div>
+            <div class="title-order">
+                <h4>ORDER :</h4>
+            </div>
+            <div class="order">
+                <a href="https://shopee.co.id/product/266742751/6741445114?smtt=0.266745624-1641562307.9" target="_blank" class="btn shop">Shopee</a>
+                <a href="https://wa.me/message/BMFFS2UAZZZAG1" target="_blank" class="btn whats">WhatsApp</a>
+            </div>
+            <div class="desc">
+                <h4>DESCRIPTION :</h4>
+                <p>100% ORIGINAL<i class="fas fa-check-square"></i></p>
+                <p>--</p>
+                <p><i class="fas fa-check"></i>Jeans Denim Premium</p>
+                <p><i class="fas fa-check"></i>Label Woven</p>
+                <p><i class="fas fa-check"></i>Full Hantag</p>
+                <p>--</p>
+                <p>SIZE CHART :</p>
+                <p>M: Panjang tangan 62cm x Panjang badan 66cm x Lebar badan 51cm</p>
+                <p>L: Panjang tangan 62cm x Panjang badan 68cm x Lebar badan 54cm</p>
+                <p>XL: Panjang tangan 63cm x Panjang badan 69cm x Lebar badan 56cm</p>
+            </div>
+        </div>
+    </div>
+    <!--WHATSAPP-->
+    <div class="wa">
+        <p class="drop-left">WhatsApp</p>
+        <a href="https://wa.me/message/BMFFS2UAZZZAG1" target="_blank" class="logo-wa"><img
+                src="https://seeklogo.com/images/W/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png"></a>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="logo-wrapper">
+            <img class="logo-footer" src="logo1.png">
+            <ul class="medsos">
+                <li><a href="https://www.instagram.com/odnistore/" target="_blank" class="fab fa-instagram"></a></li>
+                <li><a href="https://shp.ee/k6ntr5g" target="_blank"><img class="shopee" src="shopee.png"></a></li>
+                <ul>
+        </div>
+        <div class="informasi footer-list">
+            <p>Informasi</p>
+            <ul>
+                <li><a href="#">Garansi Produk</a></li>
+                <li><a href="#">Pengiriman</a></li>
+            </ul>
+        </div>
+        <div class="hub footer-list">
+            <p>Hubungi Kami</p>
+            <ul>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    max-width: 1440px;
+    width: 100%;
+    height: 70px;
+    padding: 0px 30px;
+    overflow: visible;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgb(75, 75, 75);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.logo-header {
+    display: flex;
+    justify-content: center;
+}
+.logo-header img {
+    width: 70px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 130px 0 250px;
+}
+nav p {
+    font-size: 17px;
+    font-weight: bold;
+}
+nav a {
+    color: black;
+    display: block;
+    padding: 0 30px;
+    line-height: 70px;
+}
+nav a:hover {
+    background-color: turquoise;
+    color: white;
+    transition: 0.4s;
+}
+.title-nav {
+    position: relative;
+}
+.active a{
+    color: turquoise;
+}
+.drop-down {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+}
+.drop-down li {
+    font-size: 16px;
+    font-weight: bold;
+}
+.produk:hover .drop-down {
+    display: block;
+}
+.search {
+    position: relative;
+}
+.search input {
+    height: 30px;
+    width: 220px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    background-color: whitesmoke;
+}
+.search input:focus{
+    border: 1px solid turquoise;
+    background-color: white;
+    transition: 0.2s;
+}
+.search .fas {
+    font-size: 17px;
+    background-color: transparent;
+    
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: 6px;
+    
+}
+.search .fas:hover{
+    color: rgb(150, 150, 150);
+}
+.search .fas:active{
+    color: rgb(110, 110, 110);
+}
+.content-wrapper {
+    max-width: 1440px;
+    padding: 100px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+.container-desc {
+    width: 35%;
+    margin-left: 5%;
+}
+.title-desc {
+    margin-bottom: 20px;
+}
+.title-desc h3 {
+    color: grey;
+}
+.size {
+    margin-bottom: 5px;
+}
+.title-order{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.order {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+}
+.btn {
+    padding: 4px 7px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.shop {
+    background-color: #ff401e;
+}
+.whats {
+    background-color: rgb(59, 163, 59);
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:active{
+    opacity: 1;
+}
+.desc {
+    margin-top: 30px;
+    line-height: 25px;
+}
+.fa-check-square {
+    margin-left: 5px;
+    color: green;
+}
+img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container-slide {
+    position: relative;
+    width: 35%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+      width: 100%;
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 4px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    width: 100%;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+.wa {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.drop-left {
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    padding: 3px 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+.logo-wa img {
+    width: 55px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+}
+.logo-wa img:hover{
+    opacity: 1;
+}
+.wa:hover .drop-left{
+    display: block;
+}
+footer {
+    max-width: 1440px;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: white;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-footer{
+    width: 85px;
+}
+.medsos {
+    display: flex;
+}
+.shopee {
+    width: 25px;
+    opacity: 0.8;
+}
+.shopee:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.fa-instagram {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 38px;
+}
+.fa-instagram:hover {
+    color: rgb(29, 98, 228);
+    transition: 0.3s;
+}
+.footer-list {
+    line-height: 35px;
+}
+.footer-list p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.footer-list a {
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0.6;
+}
+.footer-list a:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
