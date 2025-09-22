@@ -1,8 +1,135 @@
-@media (max-width: 1070px){
-    .search {
-        display: none;
-    }
-    .slideshow-container {
-        width: 100%;
-    }
+/* Responsive untuk tablet */
+@media (max-width: 992px) {
+  nav {
+    margin: 0 50px;
+  }
+  .search input {
+    width: 180px;
+  }
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .item {
+    width: 45%;
+  }
+  .container-desc {
+    width: 45%;
+    margin-left: 0;
+  }
+  .container-slide {
+    width: 45%;
+  }
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* Biar konten tidak ketiban navbar */
+  .slideshow-container {
+    margin-top: 100px; /* sesuaikan tinggi header */
+  }
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 15px;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  nav a {
+    padding: 8px 15px;
+    line-height: normal;
+  }
+
+  .search {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .search input {
+    width: 100%;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item {
+    width: 100%;
+  }
+
+  .slideshow-container img,
+  .mySlides img {
+    width: 100%;
+    height: auto;
+  }
+  /* Biar konten tidak ketiban navbar */
+  .slideshow-container {
+    margin-top: 120px; /* sesuaikan tinggi header */
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .container-slide,
+  .container-desc {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .footer-list {
+    margin-top: 10px;
+  }
+}
+
+/* Responsive untuk layar kecil (HP lebih kecil) */
+@media (max-width: 480px) {
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .order {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+
+  /* Tambahin juga di HP kecil */
+  .slideshow-container {
+    margin-top: 130px;
+  }
 }

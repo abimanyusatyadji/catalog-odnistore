@@ -1,13 +1,12 @@
 * {
   box-sizing: border-box;
-  margin: 0px auto;
+  margin: 0px;
   padding: 0px;
 }
 body {
-  margin: 0px auto;
+  margin: 0px;
   background-color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
 }
 li {
   list-style: none;
@@ -17,7 +16,7 @@ a {
   color: black;
 }
 header {
-  margin: 0px auto;
+  max-width: 1440px;
   width: 100%;
   height: 70px;
   padding: 0px 30px;
@@ -98,7 +97,6 @@ nav a:hover {
 .search .fas {
   font-size: 17px;
   background-color: transparent;
-
   cursor: pointer;
   position: absolute;
   right: 14px;
@@ -110,23 +108,84 @@ nav a:hover {
 .search .fas:active {
   color: rgb(110, 110, 110);
 }
+.content-wrapper {
+  max-width: 1440px;
+  padding: 100px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+}
+.container-desc {
+  width: 35%;
+  margin-left: 5%;
+}
+.title-desc {
+  margin-bottom: 20px;
+}
+.title-desc h3 {
+  color: grey;
+}
+.title-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.size {
+  margin-bottom: 5px;
+}
+.title-order {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.order {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.btn {
+  padding: 4px 7px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.shop {
+  background-color: #ff401e;
+}
+.whats {
+  background-color: rgb(59, 163, 59);
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  opacity: 1;
+}
+.desc {
+  margin-top: 30px;
+  line-height: 25px;
+}
+.fa-check-square {
+  margin-left: 5px;
+  color: green;
+}
+img {
+  vertical-align: middle;
+}
+
+/* ================= SLIDESHOW ================= */
 .mySlides {
   display: none;
   width: 100%;
-  /* Tersembunyi secara default */
 }
 
 .mySlides img {
-  vertical-align: middle;
   width: 100%;
-  padding-top: 40px;
-  text-align: center;
+  padding-top: 70px; /* biar ga ketutup header */
 }
 
 .slideshow-container {
   width: 100%;
   position: relative;
-  margin: 0px auto;
 }
 
 .prev,
@@ -134,130 +193,167 @@ nav a:hover {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 16px;
-  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.2s ease;
-  border-radius: 0 3px 3px 0;
+  transition: 0.2s;
+  border-radius: 3px;
   user-select: none;
 }
 
-/* Meletakkan tombol next ke sebelah kanan */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* ================= CONTENT ================= */
 .content-wrapper {
   background-color: whitesmoke;
-  padding: 25px 0 40px 0;
-  border-bottom: 1px solid rgb(165, 165, 165);
+  padding: 50px 20px;
+  border-bottom: 1px solid #ccc;
+  overflow-x: auto; /* biar bisa geser kalau kepanjangan */
 }
-.container {
-  width: 100%;
-  padding: 0px 15px;
-  margin: 0px auto;
-}
+
+/* Produk berjejer horizontal */
 .products {
   display: flex;
-  justify-content: space-around;
+  gap: 70px;
+  flex-wrap: nowrap; /* supaya tetap sejajar */
+  overflow-x: auto; /* scroll horizontal */
+  scrollbar-width: thin; /* firefox */
+  scrollbar-color: #ccc transparent;
 }
+
+.products::-webkit-scrollbar {
+  height: 8px;
+}
+.products::-webkit-scrollbar-track {
+  background: transparent;
+}
+.products::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Card produk */
 .item {
   background-color: white;
-  padding-bottom: 5px;
+  border-radius: 10px;
+  width: 260px;
+  flex: 0 0 auto; /* biar lebar fix dan gak menyusut */
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
 .item h4,
 .item p {
-  margin-left: 5px;
+  margin: 10px;
 }
+
 .item:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-.title-content {
-  text-align: center;
-  margin-bottom: 20px;
-}
+
+/* ================= WHATSAPP FLOAT ================= */
 .wa {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 15px;
   display: flex;
   align-items: center;
-  overflow: visible;
 }
 
 .drop-left {
   font-size: 12px;
-  background-color: rgb(255, 255, 255);
-  padding: 3px 5px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: none;
 }
+
 .logo-wa img {
   width: 55px;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0.8;
 }
+
 .logo-wa img:hover {
   opacity: 1;
 }
+
 .wa:hover .drop-left {
   display: block;
 }
+
+/* ================= FOOTER ================= */
 footer {
-  margin: 0px auto;
-  padding: 20px 15px;
+  padding: 30px 20px;
   background-color: white;
-  height: 250px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
+
 .logo-footer {
   width: 85px;
 }
+
 .medsos {
   display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 .shopee {
   width: 25px;
   opacity: 0.8;
 }
+
 .shopee:hover {
   opacity: 1;
-  transition: 0.3s;
 }
+
 .fa-instagram {
   font-size: 22px;
-  margin-top: 4px;
-  margin-left: 10px;
-  margin-right: 38px;
 }
+
 .fa-instagram:hover {
   color: rgb(29, 98, 228);
-  transition: 0.3s;
 }
+
 .footer-list {
-  line-height: 35px;
+  line-height: 30px;
 }
+
 .footer-list p {
   font-weight: bold;
-  font-size: 17px;
-  margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
+
 .footer-list a {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   opacity: 0.6;
 }
+
 .footer-list a:hover {
   opacity: 1;
-  transition: 0.3s;
 }

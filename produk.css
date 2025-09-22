@@ -1,219 +1,495 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 body {
-    margin: 0px;
-    background-color: whitesmoke;
-    font-family:Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 header {
-    max-width: 1440px;
-    width: 100%;
-    height: 70px;
-    padding: 0px 30px;
-    overflow: visible;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 1px 5px rgb(75, 75, 75);
-    position: fixed;
-    top: 0px;
-    z-index: 1;
+  max-width: 1440px;
+  width: 100%;
+  height: 70px;
+  padding: 0px 30px;
+  overflow: visible;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 5px rgb(75, 75, 75);
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 .logo-header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .logo-header img {
-    width: 70px;
+  width: 70px;
 }
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0 130px 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 130px 0 250px;
 }
 nav p {
-    font-size: 17px;
-    font-weight: bold;
+  font-size: 17px;
+  font-weight: bold;
 }
 nav a {
-    color: black;
-    display: block;
-    padding: 0 30px;
-    line-height: 70px;
+  color: black;
+  display: block;
+  padding: 0 30px;
+  line-height: 70px;
 }
 nav a:hover {
-    background-color: turquoise;
-    color: white;
-    transition: 0.4s;
+  background-color: turquoise;
+  color: white;
+  transition: 0.4s;
 }
 .title-nav {
-    position: relative;
+  position: relative;
 }
-.active a{
-    color: turquoise;
+.active a {
+  color: turquoise;
 }
 .drop-down {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    display: none;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 .drop-down li {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 .produk:hover .drop-down {
-    display: block;
+  display: block;
 }
 .search {
-    position: relative;
+  position: relative;
 }
 .search input {
-    height: 30px;
-    width: 220px;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 20px;
-    outline: none;
-    background-color: whitesmoke;
+  height: 30px;
+  width: 220px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+  outline: none;
+  background-color: whitesmoke;
 }
-.search input:focus{
-    border: 1px solid turquoise;
-    background-color: white;
-    transition: 0.2s;
+.search input:focus {
+  border: 1px solid turquoise;
+  background-color: white;
+  transition: 0.2s;
 }
 .search .fas {
-    font-size: 17px;
-    background-color: transparent;
-    
-    cursor: pointer;
-    position: absolute;
-    right: 14px;
-    top: 6px;
-    
+  font-size: 17px;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+  top: 6px;
 }
-.search .fas:hover{
-    color: rgb(150, 150, 150);
+.search .fas:hover {
+  color: rgb(150, 150, 150);
 }
-.search .fas:active{
-    color: rgb(110, 110, 110);
+.search .fas:active {
+  color: rgb(110, 110, 110);
 }
 .content-wrapper {
-    background-color: whitesmoke;
-    padding: 130px 0 80px 0;
-    border-bottom: 1px solid rgb(165, 165, 165);
+  max-width: 1440px;
+  padding: 100px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
 }
-.container {
-    max-width: 1440px;
-    width: 100%;
-    padding : 0px 15px;
-    margin: 0 auto;
+.container-desc {
+  width: 35%;
+  margin-left: 5%;
 }
-.products {
-    display: flex;
-    justify-content: space-around;
+.title-desc {
+  margin-bottom: 20px;
 }
-.item {
-    background-color: white;
-    padding-bottom: 5px;
-}
-.item h4,.item p {
-    margin-left: 5px;
-}
-.item:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.title-desc h3 {
+  color: grey;
 }
 .title-content {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
+.size {
+  margin-bottom: 5px;
+}
+.title-order {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.order {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.btn {
+  padding: 4px 7px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.shop {
+  background-color: #ff401e;
+}
+.whats {
+  background-color: rgb(59, 163, 59);
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  opacity: 1;
+}
+.desc {
+  margin-top: 30px;
+  line-height: 25px;
+}
+.fa-check-square {
+  margin-left: 5px;
+  color: green;
+}
+img {
+  vertical-align: middle;
+}
+
+/* ================= SLIDESHOW ================= */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  padding-top: 70px; /* biar ga ketutup header */
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s;
+  border-radius: 3px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ================= CONTENT ================= */
+.content-wrapper {
+  background-color: whitesmoke;
+  padding: 50px 20px;
+  border-bottom: 1px solid #ccc;
+  overflow-x: auto; /* biar bisa geser kalau kepanjangan */
+  margin-top: 60px;
+}
+
+/* Produk berjejer horizontal */
+.products {
+  display: flex;
+  gap: 70px;
+  flex-wrap: nowrap; /* supaya tetap sejajar */
+  overflow-x: auto; /* scroll horizontal */
+  scrollbar-width: thin; /* firefox */
+  scrollbar-color: #ccc transparent;
+}
+
+.products::-webkit-scrollbar {
+  height: 8px;
+}
+.products::-webkit-scrollbar-track {
+  background: transparent;
+}
+.products::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Card produk */
+.item {
+  background-color: white;
+  border-radius: 10px;
+  width: 260px;
+  flex: 0 0 auto; /* biar lebar fix dan gak menyusut */
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.item h4,
+.item p {
+  margin: 10px;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= WHATSAPP FLOAT ================= */
 .wa {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    overflow: visible;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .drop-left {
-    font-size: 12px;
-    background-color: rgb(255, 255, 255);
-    padding: 3px 5px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: none;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none;
 }
+
 .logo-wa img {
-    width: 55px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    opacity: 0.8;
+  width: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
 }
-.logo-wa img:hover{
-    opacity: 1;
+
+.logo-wa img:hover {
+  opacity: 1;
 }
-.wa:hover .drop-left{
-    display: block;
+
+.wa:hover .drop-left {
+  display: block;
 }
+
+/* ================= FOOTER ================= */
 footer {
-    max-width: 1440px;
-    width: 100%;
-    padding: 20px 15px;
-    background-color: white;
-    height: 250px;
-    display: flex;
-    justify-content: space-around;
+  padding: 30px 20px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
-.logo-footer{
-    width: 85px;
+
+.logo-footer {
+  width: 85px;
 }
+
 .medsos {
-    display: flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 .shopee {
-    width: 25px;
-    opacity: 0.8;
+  width: 25px;
+  opacity: 0.8;
 }
-.shopee:hover{
-    opacity: 1;
-    transition: 0.3s;
+
+.shopee:hover {
+  opacity: 1;
 }
+
 .fa-instagram {
-    font-size: 22px;
-    margin-top: 4px;
-    margin-left: 10px;
-    margin-right: 38px;
+  font-size: 22px;
 }
+
 .fa-instagram:hover {
-    color: rgb(29, 98, 228);
-    transition: 0.3s;
+  color: rgb(29, 98, 228);
 }
+
 .footer-list {
-    line-height: 35px;
+  line-height: 30px;
 }
+
 .footer-list p {
-    font-weight: bold;
-    font-size: 17px;
-    margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
+
 .footer-list a {
-    font-weight: bold;
-    font-size: 15px;
-    opacity: 0.6;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0.6;
 }
-.footer-list a:hover{
-    opacity: 1;
-    transition: 0.3s;
+
+.footer-list a:hover {
+  opacity: 1;
+}
+
+/* ================= RESPONSIVE ================= */
+/* Responsive untuk tablet */
+@media (max-width: 992px) {
+  nav {
+    margin: 0 50px;
+  }
+  .search input {
+    width: 180px;
+  }
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .item {
+    width: 45%;
+  }
+  .container-desc {
+    width: 45%;
+    margin-left: 0;
+  }
+  .container-slide {
+    width: 45%;
+  }
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+  }
+  /* Biar konten tidak ketiban navbar */
+  .content-wrapper {
+    margin-top: 100px; /* sesuaikan tinggi header */
+  }
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 15px;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  nav a {
+    padding: 8px 15px;
+    line-height: normal;
+  }
+
+  .search {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .search input {
+    width: 100%;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item {
+    width: 100%;
+  }
+
+  .slideshow-container img,
+  .mySlides img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 100px 20px 40px 20px;
+  }
+
+  .container-slide,
+  .container-desc {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .footer-list {
+    margin-top: 10px;
+  }
+  /* Biar konten tidak ketiban navbar */
+  .content-wrapper {
+    margin-top: 120px; /* sesuaikan tinggi header */
+  }
+}
+
+/* Responsive untuk layar kecil (HP lebih kecil) */
+@media (max-width: 480px) {
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .order {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+  /* Biar konten tidak ketiban navbar */
+  .content-wrapper {
+    margin-top: 130px; /* sesuaikan tinggi header */
+  }
 }
