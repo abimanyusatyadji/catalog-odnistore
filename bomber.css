@@ -264,56 +264,62 @@ img {
   display: block;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
-  max-width: 1440px;
-  width: 100%;
-  padding: 20px 15px;
+  padding: 30px 140px;
   background-color: white;
-  height: 250px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
+
 .logo-footer {
   width: 85px;
 }
+
 .medsos {
   display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 .shopee {
   width: 25px;
   opacity: 0.8;
 }
+
 .shopee:hover {
   opacity: 1;
-  transition: 0.3s;
 }
+
 .fa-instagram {
   font-size: 22px;
-  margin-top: 4px;
-  margin-left: 10px;
-  margin-right: 38px;
+  margin-top: 5px;
 }
+
 .fa-instagram:hover {
   color: rgb(29, 98, 228);
-  transition: 0.3s;
 }
+
 .footer-list {
-  line-height: 35px;
+  line-height: 30px;
 }
+
 .footer-list p {
   font-weight: bold;
-  font-size: 17px;
-  margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
+
 .footer-list a {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   opacity: 0.6;
 }
+
 .footer-list a:hover {
   opacity: 1;
-  transition: 0.3s;
 }
 
 /* ================= RESPONSIVE ================= */
